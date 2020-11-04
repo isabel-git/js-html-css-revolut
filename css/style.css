@@ -1,0 +1,29 @@
+/* regole generali */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* regole di debug */
+    background-color: red;
+    /* fine debug */
+}
+
+div.logo{
+    width: 20%;
+    /* regole di debug */
+    border: 1px solid;
+    /* fine debug */
+}
+
+nav{
+    width: 40%;
+    /* regole di debug */
+    border: 1px solid;
+    /* fine debug */
+}
