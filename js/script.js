@@ -1,12 +1,15 @@
 $(document).ready(function () {
 
-  // finzione per creare dropdown menù che viene fuori al click
-  $('.dropitem').click(function () {
-
-    $('.dropdown').removeClass("active"); // se aperto, chiudi l'altro
-
-    $(this).find('.dropdown').toggleClass('active');
-
+  // funzione dropdown
+  $(document).ready(function(){
+    $(".dropitem").click(function(){
+      if ($(this).find(".dropdown").is(":visible")) {
+        $(".dropdown").hide();
+      } else {
+        $(".dropdown").hide();
+        $(this).find(".dropdown").toggle();
+      }
+    });
   });
 
 });
