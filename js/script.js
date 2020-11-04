@@ -1,10 +1,8 @@
-
-// dropdown simile a google
-
 $(document).ready(function () {
 
   $('.dropitem').click(function () {
-    $('.dropdown').toggleClass('active');
+
+    $(this).find('.dropdown').toggleClass('active');
   });
 
 });
