@@ -1,0 +1,99 @@
+/* regole generali */
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+    padding: 0 10px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(126, 126, 126);}
+
+/* regole body */
+body{
+    background-color: rgb(228, 228, 228);
+}
+
+/* inizio header */
+header{
+    display: flex;
+    padding: 10px;
+    background-color: white;
+}
+
+.left{
+    width: 400px;
+    /* regole di debug 
+    border: 1px solid;
+    /* fine debug */
+}
+
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+    flex-grow: 1;
+    /* regole di debug 
+    border: 1px solid;
+    /* fine debug */
+}
+
+#ham{
+    display: none;
+}
+
+.left > ul > li,
+.right > ul > li{
+    display: inline-block;
+    position: relative;
+}
+
+.logo img{
+    width: 100px;
+    vertical-align: middle;
+}
+
+.black a{
+    color: black;
+}
+
+.dropdown{
+    position: absolute;
+    top: 30px;
+    background-color: white;
+    display: none;
+}
+
+.dropdown li{
+    padding: 5px 10px;
+}
+
+sup{
+    color: rgb(216, 38, 157);
+}
+
+#bottone{
+    background-color: rgb(216, 38, 157);
+    color: white;
+    border-radius: 20px;
+    padding: 7px 10px;
+}
+
+/****** MEDIA QUERY ******/
+@media screen and (max-width: 1045px)
+{
+    nav ul {
+        display: none;
+    }
+
+    #ham{
+        display: block;
+    }
+
+}
