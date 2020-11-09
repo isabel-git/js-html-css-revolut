@@ -26,14 +26,31 @@ header{
     background-color: white;
 }
 
+/* regole parte sinistra del header */
 .left{
     width: 400px;
     /* regole di debug 
     border: 1px solid;
     /* fine debug */
 }
+.logo{
+    display: inline-block;
+    width: 100px;
+}
+.logo img{
+    width: 100%;
+    vertical-align: middle;
+}
 
+.left ul{
+    display: inline-block;
+}
 
+.black a{
+    color: black;
+}
+
+/* regole parte destra del header */
 .right{
     display: flex;
     align-items: center;
@@ -44,23 +61,10 @@ header{
     /* fine debug */
 }
 
-#ham{
-    display: none;
-}
-
 .left > ul > li,
 .right > ul > li{
     display: inline-block;
     position: relative;
-}
-
-.logo img{
-    width: 100px;
-    vertical-align: middle;
-}
-
-.black a{
-    color: black;
 }
 
 .dropdown{
@@ -78,22 +82,67 @@ sup{
     color: rgb(216, 38, 157);
 }
 
-#bottone{
+.bottone {
     background-color: rgb(216, 38, 157);
     color: white;
     border-radius: 20px;
     padding: 7px 10px;
 }
 
+/* ham */
+#ham{
+    display: none;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+/* inizio regole hamburgher menu */
+.hamburger-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    padding: 20px;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.hamburger-menu div{
+    margin: 40px 0;
+}
+
+.hamburger-menu ul li a {
+    font-size: 20px;
+}
+
+.close {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 35px;
+}
+
 /****** MEDIA QUERY ******/
-@media screen and (max-width: 1045px)
-{
-    nav ul {
+@media screen and (max-width: 1045px){
+
+    .left ul,
+    nav ul,
+    .right .bottone {
         display: none;
     }
 
     #ham{
         display: block;
+    }
+
+    .hamburger-menu.active{
+        display: block;
+    }
+
+    div .top li{
+        display: inline-block;
     }
 
 }
