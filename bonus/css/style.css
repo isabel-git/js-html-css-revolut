@@ -12,7 +12,13 @@ li{
 
 a{
     text-decoration: none;
-    color: rgb(126, 126, 126);}
+    color: rgb(126, 126, 126);
+}
+
+a:hover{
+    color: black;
+}
+
 
 /* regole body */
 body{
@@ -48,6 +54,7 @@ header{
 
 .black a{
     color: black;
+    font-weight: 600;
 }
 
 /* regole parte destra del header */
@@ -88,6 +95,10 @@ sup{
     border-radius: 20px;
     padding: 7px 10px;
 }
+.bottone:hover{
+    color: white;
+    background-color: violet;
+}
 
 /* ham */
 #ham{
@@ -111,6 +122,16 @@ sup{
 .hamburger-menu div{
     margin: 40px 0;
 }
+
+/* inizio padding li */
+.hamburger-menu .center ul li{
+    padding-left: 10px;
+}
+
+.hamburger-menu .center ul li{
+    padding: 10px 0;
+}
+/* fine padding */
 
 .hamburger-menu ul li a {
     font-size: 20px;
